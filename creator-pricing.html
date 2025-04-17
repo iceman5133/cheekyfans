@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Set Your Prices – CheekyFans</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #f5fff5, #c2f0da);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .pricing-box {
+      background-color: white;
+      padding: 3rem 2rem;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      width: 100%;
+    }
+
+    h2 {
+      color: #27ae60;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      color: #444;
+    }
+
+    input {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1.25rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    button {
+      width: 100%;
+      padding: 0.75rem;
+      background-color: #27ae60;
+      color: white;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 0 10px #27ae60;
+    }
+
+    button:hover {
+      background-color: #1e8c4f;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="pricing-box">
+    <h2>Set Your Prices</h2>
+    <form>
+      <label for="monthly">Monthly Subscription ($)</label>
+      <input type="number" id="monthly" placeholder="e.g. 9.99" required />
+
+      <label for="exclusive">Exclusive Content Unlock ($)</label>
+      <input type="number" id="exclusive" placeholder="e.g. 4.99" required />
+
+      <label for="locked-video">Locked Video Price ($)</label>
+      <input type="number" id="locked-video" placeholder="e.g. 5.99" required />
+
+      <label for="locked-image">Locked Image Price ($)</label>
+      <input type="number" id="locked-image" placeholder="e.g. 2.99" required />
+
+      <label for="pay-per-post">Pay-per-Post Price ($)</label>
+      <input type="number" id="pay-per-post" placeholder="e.g. 1.99" />
+
+      <label for="custom-request">Custom Request Pricing ($)</label>
+      <input type="number" id="custom-request" placeholder="e.g. 10.00" />
+
+      <label for="bundle-3month">3-Month Subscription Bundle ($)</label>
+      <input type="number" id="bundle-3month" placeholder="e.g. 24.99" />
+
+      <label for="bundle-6month">6-Month Subscription Bundle ($)</label>
+      <input type="number" id="bundle-6month" placeholder="e.g. 44.99" />
+
+      <label for="free-trial">Free Trial Days</label>
+      <input type="number" id="free-trial" placeholder="e.g. 7" />
+
+      <button type="submit">Save My Prices</button>
+    </form>
+  </div>
+
+</body>
+</html>
+

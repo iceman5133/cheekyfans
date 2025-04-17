@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Upload Video – CheekyFans</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #f5fff5, #c2f0da);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .upload-box {
+      background-color: white;
+      padding: 3rem 2rem;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    h2 {
+      color: #27ae60;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    label {
+      font-weight: bold;
+      color: #444;
+      display: block;
+      margin-top: 1rem;
+    }
+
+    input[type="file"],
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 2rem;
+      padding: 0.75rem;
+      background-color: #27ae60;
+      color: white;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 0 10px #27ae60;
+    }
+
+    button:hover {
+      background-color: #1e8c4f;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="upload-box">
+    <h2>Upload Video</h2>
+    <form>
+      <label for="video-title">Title or Caption</label>
+      <input type="text" id="video-title" placeholder="e.g. Behind the scenes tease" />
+
+      <label for="access">Access Level</label>
+      <select id="access">
+        <option value="free">Free</option>
+        <option value="locked">Locked (Paid)</option>
+      </select>
+
+      <label for="video-upload">Select Video File</label>
+      <input type="file" id="video-upload" accept="video/*" />
+
+      <button type="submit">Upload Video</button>
+    </form>
+  </div>
+
+</body>
+</html>

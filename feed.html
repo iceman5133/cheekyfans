@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CheekyFans Feed</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #222;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      width: 220px;
+      background-color: #2ecc71;
+      color: white;
+      padding: 2rem 1rem;
+      position: fixed;
+      height: 100vh;
+    }
+
+    .sidebar h2 {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      margin: 1rem 0;
+      text-decoration: none;
+    }
+
+    .main {
+      margin-left: 220px;
+      flex: 1;
+      padding: 2rem;
+      overflow-y: auto;
+    }
+
+    .post {
+      background: #f8f8f8;
+      margin-bottom: 2rem;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.05);
+    }
+
+    .post video {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .post h3 {
+      margin-top: 0.5rem;
+    }
+
+    .post .actions {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 0.5rem;
+    }
+
+    .post .actions button {
+      background-color: #2ecc71;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>CheekyFans</h2>
+    <a href="index.html">Home</a>
+    <a href="shorts.html">Shorts</a>
+    <a href="for-creators.html">For Creators</a>
+    <a href="feed.html">Feed</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div class="main">
+    <div class="post">
+      <video src="https://www.w3schools.com/html/mov_bbb.mp4" autoplay muted loop></video>
+      <h3>@cheekyqueen</h3>
+      <div class="actions">
+        <span>🔥 1.2K Likes</span>
+        <button>Follow</button>
+      </div>
+    </div>
+
+    <div class="post">
+      <video src="https://www.w3schools.com/html/movie.mp4" autoplay muted loop></video>
+      <h3>@peachvibes</h3>
+      <div class="actions">
+        <span>💬 300 Comments</span>
+        <button>Follow</button>
+      </div>
+    </div>
+
+    <div class="post">
+      <video src="https://www.w3schools.com/html/mov_bbb.mp4" autoplay muted loop></video>
+      <h3>@naughtynova</h3>
+      <div class="actions">
+        <span>⭐ 900 Favorites</span>
+        <button>Follow</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

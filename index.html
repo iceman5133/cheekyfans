@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CheekyFans – Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #e6fff2, #b3f0c9);
+      color: #222;
+    }
+
+    header {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: #27ae60;
+      color: white;
+    }
+
+    nav {
+      background-color: #d9fce4;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      color: #27ae60;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      position: relative;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    .hero img {
+      width: 100%;
+      max-height: 600px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: #27ae60;
+      margin-top: 2rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #333;
+      margin: 1rem 0 2rem;
+    }
+
+    .hero a {
+      background-color: #27ae60;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      font-size: 1.1rem;
+      border-radius: 50px;
+      box-shadow: 0 0 15px #27ae60;
+      transition: all 0.3s ease;
+    }
+
+    .hero a:hover {
+      box-shadow: 0 0 30px #27ae60;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #27ae60;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>CheekyFans</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="for-creators.html">For Creators</a>
+    <a href="shorts.html">Shorts</a>
+    <a href="feed.html">Feed</a>
+    <a href="bikini-gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <img src="https://imgur.com/jEDmsFx.jpg" alt="Laying Bikini Model" />
+    <h1>Welcome to CheekyFans</h1>
+    <p>The flirtiest creator platform with total freedom and big fan energy.</p>
+    <a href="#">Join Now</a>
+  </section>
+
+  <footer>
+    CheekyFans – Where creators shine cheekiest.
+  </footer>
+  
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(reg => console.log('Service Worker registered!', reg))
+        .catch(err => console.log('Service Worker registration failed:', err));
+    }
+  </script>
+  
+</body>
+</html>
+
